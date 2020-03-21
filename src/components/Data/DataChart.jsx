@@ -152,7 +152,7 @@ const DataChart = ({ casesData }) => {
   return (
     <Container className="data-chart">
       {casesData && (
-        <ReactEcharts option={getOptions()} style={{ height: "500px" }} />
+        <ReactEcharts option={getOptions()} style={{ height: "450px" }} />
       )}
     </Container>
   );
