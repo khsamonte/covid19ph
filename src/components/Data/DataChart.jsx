@@ -21,8 +21,12 @@ const DataChart = ({ casesData }) => {
         trigger: "axis"
       },
       legend: {
-        show: false
+        show: true,
+        textStyle: {
+          color: "#fff"
+        }
       },
+      color: ["#ffff32", "#F26964", "#3A96FD"],
       grid: gridOptions,
       xAxis: {
         ...xAxisOptions,
