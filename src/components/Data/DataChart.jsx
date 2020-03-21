@@ -37,7 +37,7 @@ const DataChart = ({ casesData }) => {
           type: "line",
           data: casesData.confirmed.map(val => ({
             value: val,
-            symbolSize: 8,
+            symbolSize: 6,
             label: {
               color: "#fff"
             },
@@ -74,7 +74,7 @@ const DataChart = ({ casesData }) => {
           type: "line",
           data: casesData.deaths.map(val => ({
             value: val,
-            symbolSize: 8,
+            symbolSize: 6,
             label: {
               color: "#fff"
             },
@@ -111,7 +111,7 @@ const DataChart = ({ casesData }) => {
           type: "line",
           data: casesData.recoveries.map(val => ({
             value: val,
-            symbolSize: 8,
+            symbolSize: 6,
             label: {
               color: "#fff"
             },
