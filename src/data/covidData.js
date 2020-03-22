@@ -31,23 +31,24 @@ const confirmedCases = {
     15,
     15,
     13,
-    77
+    77,
+    73
   ]
 };
 const deaths = {
   january: range(1, 32).map(val => 0),
   february: february.map(val => (val !== "Feb 2" ? 0 : 1)),
-  march: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 3, 4, 0, 2, 3, 0, 1, 0]
+  march: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 0, 3, 4, 0, 2, 3, 0, 1, 0, 6]
 };
 const recoveries = {
   january: range(1, 32).map(val => 0),
   february: february.map(val =>
     val === "Feb 5" ? 1 : val === "Feb 10" ? 1 : 0
   ),
-  march: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 1, 0, 5]
+  march: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 1, 0, 5, 2]
 };
 
-const allDays = [...january.slice(29), ...february, ...march.slice(0, 21)];
+const allDays = [...january.slice(29), ...february, ...march.slice(0, 22)];
 
 const allConfirmed = [
   ...confirmedCases["january"].slice(29),
